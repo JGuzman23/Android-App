@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lys"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ly"
+        android:layout_width="356dp"
+        android:layout_height="359dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="5dp">
+
+        <Button
+            android:id="@+id/btn_blanco4"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="354dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/white"
+            android:onClick="bgBlanco"
+            android:text="blanco"
+            android:textColor="#0E0D0D"
+            android:textColorLink="#F4F4F4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_blanco3"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="358dp"
+            android:layout_height="39dp"
+            android:background="@color/black"
+
+            android:onClick="bgGris"
+            android:text="gris"
+            android:textColor="#1C1B1B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_blanco4" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="129dp"
+            android:layout_height="91dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_blanco"
+            app:srcCompat="@drawable/itla" />
+
+        <EditText
+            android:id="@+id/edt"
+            android:layout_width="162dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/btn_blanco" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="174dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/edt" />
+
+        <Button
+            android:id="@+id/btn_blanco"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="354dp"
+            android:layout_height="43dp"
+            android:background="@color/black"
+            android:onClick="bgNegro"
+            android:text="negro"
+            app:layout_constraintTop_toBottomOf="@+id/btn_blanco2"
+            tools:layout_editor_absoluteX="2dp" />
+
+        <Button
+            android:id="@+id/btn_blanco2"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="357dp"
+            android:layout_height="39dp"
+            android:background="@color/white"
+            android:onClick="bgGrisOcuro"
+            android:text="gris oscuro"
+            app:layout_constraintTop_toBottomOf="@+id/btn_blanco3"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="102dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="28dp"
+            android:text="Area Swipe ↓"
+            app:layout_constraintEnd_toStartOf="@+id/txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/rla"
+        android:layout_width="358dp"
+        android:layout_height="269dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ly"
+        app:layout_constraintVertical_bias="0.0">
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
